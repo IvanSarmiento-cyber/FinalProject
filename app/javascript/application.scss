@@ -1,0 +1,118 @@
+@import "~bootstrap/scss/bootstrap";
+
+/* Example 1: Use appropriate color contrast */
+body {
+    background-color: #F0F0F0;
+    color: #333;
+  }
+  
+  /* Example 2: Use descriptive labels */
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Example 3: Use alternative text for images */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Example 4: Make website keyboard accessible */
+  a:focus, button:focus {
+    outline: 2px solid blue;
+  }
+
+  // Customize Bootstrap variables
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$success-color: #28a745;
+$info-color: #17a2b8;
+$warning-color: #ffc107;
+$danger-color: #dc3545;
+$light-color: #f8f9fa;
+$dark-color: #343a40;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+// Your custom styles here
+body {
+  background-color: $light-color;
+  color: $dark-color;
+}
+
+.navbar {
+  background-color: $primary-color;
+  color: $light-color;
+
+  .nav-link {
+    color: $light-color;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+.card {
+  border: 1px solid $secondary-color;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba($dark-color, 0.1);
+
+  .card-header {
+    background-color: $light-color;
+    border-bottom: 1px solid $secondary-color;
+
+    h5 {
+      color: $dark-color;
+    }
+  }
+
+  .card-body {
+    color: $dark-color;
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    a {
+      color: $primary-color;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  color: $light-color;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+    border-color: darken($primary-color, 10%);
+    color: $light-color;
+  }
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  border-color: $primary-color;
+  color: $primary-color;
+
+  &:hover {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: $light-color;
+  }
+}
+
+  
