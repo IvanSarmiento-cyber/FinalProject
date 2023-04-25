@@ -1,10 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
+  root "projects#index"
   resources :items
   resources :projects
-  # Define your application routes per the D
-
-  #Defines the root path route ("/ ")
-  root "projects#index"
-  resources :projects
-  
 end
