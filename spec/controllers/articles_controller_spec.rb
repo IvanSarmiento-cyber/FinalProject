@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 # Change this ArticlesController to your project
-RSpec.describe ArticlesController, type: :controller do
+RSpec.describe AbstractController, type: :controller do
 
     # Add this
     login_user
