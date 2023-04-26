@@ -1,58 +1,34 @@
 {
   "RSpec": {
     "coverage": {
-      "/root/FinalProject/app/helpers/application_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/root/FinalProject/app/helpers/projects_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
       "/root/FinalProject/app/controllers/projects_controller.rb": {
         "lines": [
           1,
           1,
-          null,
-          null,
-          1,
-          2,
-          null,
-          null,
-          null,
           1,
           null,
           null,
-          null,
           1,
-          4,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          2,
-          1,
-          null,
-          0,
           0,
           null,
           null,
           null,
+          1,
+          null,
           null,
           null,
           1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
           0,
           0,
           0,
@@ -67,6 +43,19 @@
           null,
           1,
           0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
           null,
           0,
           0,
@@ -77,17 +66,23 @@
           1,
           null,
           1,
-          3,
+          0,
           null,
           null,
           null,
           1,
-          1,
+          0,
           null,
           null
         ]
       },
       "/root/FinalProject/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/root/FinalProject/app/models/item.rb": {
         "lines": [
           1,
           null
@@ -100,15 +95,221 @@
           null
         ]
       },
-      "/root/FinalProject/app/models/application_record.rb": {
+      "/root/FinalProject/app/controllers/items_controller.rb": {
         "lines": [
           1,
           1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
           null
         ]
       },
-      "/root/FinalProject/app/channels/application_cable/channel.rb": {
+      "/root/FinalProject/app/controllers/users/confirmations_controller.rb": {
         "lines": [
+          null,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/root/FinalProject/app/controllers/users/omniauth_callbacks_controller.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/root/FinalProject/app/controllers/users/passwords_controller.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/root/FinalProject/app/controllers/users/registrations_controller.rb": {
+        "lines": [
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
           0,
           0,
           0,
@@ -117,8 +318,20 @@
         "branches": {
         }
       },
-      "/root/FinalProject/app/channels/application_cable/connection.rb": {
+      "/root/FinalProject/app/controllers/users/sessions_controller.rb": {
         "lines": [
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
           0,
           0,
           0,
@@ -127,14 +340,61 @@
         "branches": {
         }
       },
-      "/root/FinalProject/app/jobs/application_job.rb": {
+      "/root/FinalProject/app/controllers/users/unlocks_controller.rb": {
         "lines": [
+          null,
+          null,
           0,
           null,
           null,
           null,
           null,
           null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/root/FinalProject/app/helpers/application_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/root/FinalProject/app/helpers/items_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/root/FinalProject/app/helpers/projects_helper.rb": {
+        "lines": [
+          0,
           0
         ],
         "branches": {
@@ -149,8 +409,36 @@
         ],
         "branches": {
         }
+      },
+      "/root/FinalProject/app/models/application_record.rb": {
+        "lines": [
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/root/FinalProject/app/models/user.rb": {
+        "lines": [
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
       }
     },
-    "timestamp": 1681394180
+    "timestamp": 1682471737
   }
 }
