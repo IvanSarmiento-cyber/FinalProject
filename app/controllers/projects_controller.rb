@@ -1,6 +1,6 @@
 class ProjectsController < ApplicationController
-  before_action :set_project, only: %i[ show edit update destroy ]
-  before_action :authenticate_user!, only: %i[ new edit create update destroy]
+ # before_action :set_project, only: %i[ show edit update destroy ]
+  #before_action :authenticate_user!, only: %i[ new edit create update destroy]
 
   # GET /projects or /projects.json
   def index
@@ -18,6 +18,7 @@ class ProjectsController < ApplicationController
 
   # GET /projects/1/edit
   def edit
+    @project = Project.find(params[:id])
   end
 
   # POST /projects or /projects.json

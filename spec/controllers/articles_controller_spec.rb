@@ -1,5 +1,6 @@
 require 'rails_helper'
 
+
 # Change this ArticlesController to your project
 RSpec.describe AbstractController, type: :controller do
 
@@ -12,6 +13,11 @@ RSpec.describe AbstractController, type: :controller do
     }
 
     let(:valid_session) { {} }
+    before(:each) do
+        @controller = ArticlesController.new
+      end
+    
+      # Add your tests here
 
     describe "GET #index" do
         it "returns a success response" do
@@ -21,4 +27,5 @@ RSpec.describe AbstractController, type: :controller do
              expect(response).to have_http_status(302) # Expects a HTTP Status code of 302
         end
     end
+
 end

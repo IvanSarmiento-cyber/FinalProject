@@ -1,6 +1,33 @@
 <h1>Projects</h1>
 
+<br>
 <table>
+
+</html>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @projects.each do |project| %>
+      <tr>
+        <td><%= project.title %></td>
+        <td><%= project.description %></td>
+        <td><%= link_to 'Show', project %></td>
+        <% if user_signed_in? %>
+          <td><%= link_to 'Edit', edit_project_path(project) %></td>
+          <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,13 +51,15 @@ background-size: cover;
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 <div class="container-fluid">
 <a class="navbar-brand" href="#">MedEase</a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" databs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" arialabel="Toggle navigation">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" databs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" arialabel="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
 </button>
 <div class="collapse navbar-collapse" id="navbarNav">
 <ul class="navbar-nav">
 <li class="nav-item">
-<a class="nav-link" href="#">Log in</a>
+<a class="nav-link" href="<%= new_user_session_path %>">Log in</a>
+<li class="nav-item">
+<a class="nav-link" href="<%= link_to "Logout", destroy_user_session_path, method: :delete %>">Logout</a>
 </li>
 <li class="nav-item">
 <a class="nav-link" href="#">Support Group</a>
@@ -70,31 +99,6 @@ email">
 </form>
 </div>
 </body>
-</html>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @projects.each do |project| %>
-      <tr>
-        <td><%= project.title %></td>
-        <td><%= project.description %></td>
-        <td><%= link_to 'Show', project %></td>
-        <% if user_signed_in? %>
-          <td><%= link_to 'Edit', edit_project_path(project) %></td>
-          <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <% end %>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
 
 <% if user_signed_in? %>
   <%= link_to 'New Project', new_project_path %>

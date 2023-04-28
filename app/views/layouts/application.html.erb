@@ -7,7 +7,9 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-  </head>
+    <%= javascript_include_tag '/app/javascript/packs/application.js', 'data-turbolinks-track': 'reload' %>
+
+    </head>
 
   <body>
     <%= yield %>
